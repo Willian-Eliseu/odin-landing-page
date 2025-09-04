@@ -1,71 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Landing-Page</title>
+    <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Landing-Page</title>
-  <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./src/css/style.css">
-</head>
-
-<body>
-  <header class="navigation bg-dark">
-    <div class="container">
-      <div class="brand">
-        <a href="/">
-          <img src="./src/img/logo.png" alt="Site Logo">
-        </a>
+  <body>
+    <header class="navigation bg-dark">
+      <div class="container">
+        <div class="brand">
+          <a href="/">
+            <img src="./src/img/logo.png" alt="Site Logo" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#section1" class="navbar-link">Section 1</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#section2" class="navbar-link">Section 2</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#section3" class="navbar-link">Section 3</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#section4" class="navbar-link">Section 4</a>
+            </li>
+          </ul>
+          <button id="navbar-toggle">
+            <span></span>
+          </button>
+        </nav>
       </div>
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#section1" class="navbar-link">Section 1</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#section2" class="navbar-link">Section 2</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#section3" class="navbar-link">Section 3</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#section4" class="navbar-link">Section 4</a>
-          </li>
-        </ul>
-        <button id="navbar-toggle">
-          <span></span>
-        </button>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="bg-dark">
-      <div class="content-container">
-        <h1>Welcome to My Project</h1>
-        <p>This is a simple landing page template.</p>
-        <a href="#section1" class="btn">Get Started</a>
-      </div>
-    </section>
-    <section id="section1">
-      <h2>Section 1</h2>
-      <p>This is the first section of the landing page.</p>
-    </section>
-    <section id="section2">
-      <h2>Section 2</h2>
-      <p>This is the second section of the landing page.</p>
-    </section>
-    <section id="section3">
-      <h2>Section 3</h2>
-      <p>This is the third section of the landing page.</p>
-    </section>
-  </main>
+    <main>
+      <section class="bg-dark">
+        <div class="content-container">
+          <div>
+            <h1>This website is awesome</h1>
+            <p>
+              This website has some subtext that goes here under the main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <button class="signup btn btn-blue">Sing up</button>
+          </div>
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section>
 
-  <footer class="bg-dark">
-    <p class="text-light">&copy; 2025 Project Landing-Page. All rights reserved.</p>
-  </footer>
+      <section id="section1">
+        <header>
+          <h2>Some random information.</h2>
+        </header>
+        <article>
+          <div>
+            <img src="" alt="">
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+          <div>
+            <img src="" alt="">
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+          <div>
+            <img src="" alt="">
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+          <div>
+            <img src="" alt="">
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+        </article>        
+      </section>
 
-  <script src="./src/js/script.js"></script>
-</body>
+      <section id="section2">        
+        <article>
+          <p>
+            This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
+          </p>
+          <p class="text-end fw-800">
+            -Thor, God of Thunder
+          </p>
+        </article>
+      </section>
 
+      <section id="section3">
+        <article>
+          <div>
+            <h2>Call to action! It's time!</h2>
+          <p>Sign up for our product by clicking that button right over there!</p>
+          </div>
+          <div>
+            <button class="signup btn btn-outline-light">Sing up</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bg-dark">
+      <p class="text-light">
+        &copy; 2025 Project Landing-Page. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
