@@ -34,6 +34,7 @@ footer p{
 
 .navigation {
   height: 70px;
+  z-index: 1000;
 }
 
 .container {
@@ -230,6 +231,38 @@ main{
   text-align: right;
 }
 
+.information{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.information header h2{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 2rem;
+}
+
+.information article{
+  display: flex;
+  gap: 40px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.information article div{
+  flex: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.information article div img{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 4px solid var(--blue-color);
+}
+
 @keyframes background-color-change {
   from {
     background-color: #444;
@@ -287,4 +320,11 @@ main{
 
 .text-light{
   color: #f9faf8;
+}
+
+.scrolled{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
 }
