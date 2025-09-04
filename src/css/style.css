@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --blue-color: #3882f6;
+  --grey-color: #e5e7eb;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +18,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 footer{
@@ -78,7 +83,7 @@ main{
 }
 
 .navbar-link {
-  color: #fff;
+  color: #f9faf8;
   text-decoration: none;
   font-weight: 600;
   padding: 8px 12px;
@@ -132,6 +137,99 @@ main{
   transform: rotate(-45deg);
 }
 
+#hero {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+#hero div {
+  flex: 1;
+}
+
+#hero div h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+#hero div p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+#hero div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-blue{
+  background-color: var(--blue-color);
+  color: #fff;
+}
+
+.btn-outline-light{
+  background-color: transparent;
+  color: #f9faf8;
+  border: 2px solid #f9faf8;
+}
+
+.call-to-action {
+  display: flex;
+  gap: 20px;
+  padding: 3rem 6rem;
+  border-radius: 8px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.call-to-action div {
+  flex: 2;  
+}
+.call-to-action div:last-child{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote{
+  
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 8rem;
+}
+
+.quote > p{
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.quote > p:last-child{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+}
+
 @keyframes background-color-change {
   from {
     background-color: #444;
@@ -177,6 +275,14 @@ main{
 
 .bg-dark{
   background-color: #1f2937;
+}
+
+.bg-grey{
+  background-color: var(--grey-color);
+}
+
+.bg-blue{
+  background-color: var(--blue-color);
 }
 
 .text-light{
