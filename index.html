@@ -5,42 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Landing-Page</title>
-  <link rel="stylesheet" href="generic.css">
-  <link rel="stylesheet" href="navbar.css">
+  <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-  <header class="navigation">
+  <header class="navigation bg-dark">
     <div class="container">
       <div class="brand">
-        <a href="/">Nav Logo</a>
+        <a href="/">
+          <img src="./src/img/logo.png" alt="Site Logo">
+        </a>
       </div>
       <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#section1" class="navbar-link">Section 1</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#section2" class="navbar-link">Section 2</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#section3" class="navbar-link">Section 3</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#section4" class="navbar-link">Section 4</a>
+          </li>
+        </ul>
         <button id="navbar-toggle">
           <span></span>
         </button>
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Section 1</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Section 2</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Section 3</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Section 4</a>
-          </li>
-        </ul>
       </nav>
     </div>
   </header>
 
-
-
-
-  <!-- <main>
+  <main>
+    <section class="bg-dark">
+      <div class="content-container">
+        <h1>Welcome to My Project</h1>
+        <p>This is a simple landing page template.</p>
+        <a href="#section1" class="btn">Get Started</a>
+      </div>
+    </section>
     <section id="section1">
       <h2>Section 1</h2>
       <p>This is the first section of the landing page.</p>
@@ -54,11 +60,12 @@
       <p>This is the third section of the landing page.</p>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2024 My Project. All rights reserved.</p>
-  </footer> -->
 
-  <script src="script.js"></script>
+  <footer class="bg-dark">
+    <p class="text-light">&copy; 2025 Project Landing-Page. All rights reserved.</p>
+  </footer>
+
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
